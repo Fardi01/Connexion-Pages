@@ -310,6 +310,7 @@
                         <outlet property="errorMessageLabel" destination="3gg-Aj-c6Y" id="oow-xk-csE"/>
                         <outlet property="logInButton" destination="6Hg-pb-19g" id="kmg-YA-7hQ"/>
                         <outlet property="passWordTextField" destination="eIL-qJ-XNs" id="nnP-wT-Nlf"/>
+                        <segue destination="NyH-s4-KoG" kind="show" identifier="goToHome2" id="J6W-c7-Upc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCR-Ic-j6B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -364,6 +365,9 @@
             <point key="canvasLocation" x="1066.6666666666667" y="580.58035714285711"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="J6W-c7-Upc"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="hills-5942468_1280" width="960" height="1280"/>
         <image name="xmark.circle" catalog="system" width="128" height="121"/>

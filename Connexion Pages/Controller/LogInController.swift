@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LogInController: UIViewController, UITextFieldDelegate {
     
@@ -24,6 +25,27 @@ class LogInController: UIViewController, UITextFieldDelegate {
         setUpTextField()
 
     }
+
+    // MARK: -> Actions (buttons)
+    
+    @IBAction func backToSignUpScreen(_ sender: UIButton) {
+        //dismiss(animated: true, completion: nil)
+        // Permet de cacher la vue même avec l'utilisation d'un segue
+        navigationController?.popViewController(animated: true)
+        
+        
+    }
+    @IBAction func logInButtonTapped(_ sender: UIButton) {
+        // J'appelle la méthode Auth de Firebase, si les champs sont bien remplie, je passe à l'écran d'accueil.
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passWordTextField.text!) { AuthResult, error in
+            if error != nil {
+                print(error.debugDescription)
+            } else {
+                self.performSegue(withIdentifier: "goToHome2", sender: self)
+            }
+        }
+    }
+    
     
 // MARK: - TexteField Methods
     
@@ -42,19 +64,6 @@ class LogInController: UIViewController, UITextFieldDelegate {
             wrongEmail()
         }
         return true
-    }
-    
-    // MARK: -> Actions (buttons)
-    
-    @IBAction func backToSignUpScreen(_ sender: UIButton) {
-        //dismiss(animated: true, completion: nil)
-        // Permet de cacher la vue même avec l'utilisation d'un segue
-        navigationController?.popViewController(animated: true)
-        
-        
-    }
-    @IBAction func logInButtonTapped(_ sender: UIButton) {
-        
     }
     
     // MARK: - Pivate methode
