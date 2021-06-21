@@ -345,6 +345,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voF-Fh-rPL">
+                                <rect key="frame" x="82" y="674" width="250" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.29599630830000001" blue="0.4002135396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="BiH-03-iSn"/>
+                                    <constraint firstAttribute="height" constant="60" id="lVU-Ja-NIi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Me déconnecter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="LogOutButtonTapped:" destination="NyH-s4-KoG" eventType="touchUpInside" id="qRf-Iy-GyI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y97-iR-fLc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -352,6 +367,8 @@
                             <constraint firstItem="tER-Qp-gWn" firstAttribute="top" secondItem="y97-iR-fLc" secondAttribute="top" constant="70" id="87B-Tz-TOC"/>
                             <constraint firstItem="6rk-kG-ZuK" firstAttribute="top" secondItem="tER-Qp-gWn" secondAttribute="bottom" constant="20" id="Odn-ov-RX7"/>
                             <constraint firstItem="tER-Qp-gWn" firstAttribute="centerX" secondItem="EzN-57-3cG" secondAttribute="centerX" id="UFE-dm-0Am"/>
+                            <constraint firstItem="y97-iR-fLc" firstAttribute="bottom" secondItem="voF-Fh-rPL" secondAttribute="bottom" constant="128" id="hLt-s2-4q9"/>
+                            <constraint firstItem="voF-Fh-rPL" firstAttribute="centerX" secondItem="EzN-57-3cG" secondAttribute="centerX" id="k0q-O4-NbZ"/>
                             <constraint firstItem="6rk-kG-ZuK" firstAttribute="centerX" secondItem="EzN-57-3cG" secondAttribute="centerX" id="zc8-eO-hc7"/>
                         </constraints>
                     </view>

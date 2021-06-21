@@ -16,8 +16,8 @@
 		D61855A4265174D600B21CD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61855A2265174D600B21CD0 /* LaunchScreen.storyboard */; };
 		D6413BB8266CFC8A00BA8BC0 /* SwiftFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6413BB7266CFC8A00BA8BC0 /* SwiftFile.swift */; };
 		D65557AB267EAE5C008AAE74 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65557AA267EAE5C008AAE74 /* HomeController.swift */; };
+		D6B535E8267FE7F8001701E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6B535E7267FE7F8001701E2 /* GoogleService-Info.plist */; };
 		D6EC64D7267F957400762EFD /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC64D6267F957400762EFD /* LogInController.swift */; };
-		D6F626BA267D4F6A0077A038 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6F626B9267D4F6A0077A038 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +33,8 @@
 		D61855A5265174D600B21CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6413BB7266CFC8A00BA8BC0 /* SwiftFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFile.swift; sourceTree = "<group>"; };
 		D65557AA267EAE5C008AAE74 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		D6B535E7267FE7F8001701E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D6EC64D6267F957400762EFD /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
-		D6F626B9267D4F6A0077A038 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE8AA76954C28BFC5D04A995 /* Pods-Connexion Pages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connexion Pages.release.xcconfig"; path = "Target Support Files/Pods-Connexion Pages/Pods-Connexion Pages.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +88,7 @@
 		D6185596265174D500B21CD0 /* Connexion Pages */ = {
 			isa = PBXGroup;
 			children = (
-				D6F626B9267D4F6A0077A038 /* GoogleService-Info.plist */,
+				D6B535E7267FE7F8001701E2 /* GoogleService-Info.plist */,
 				D61855AE265174FC00B21CD0 /* Supports */,
 				D6413BB6266CFC6C00BA8BC0 /* Model */,
 				D61855AC265174EB00B21CD0 /* View */,
@@ -110,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				D618559B265174D500B21CD0 /* SignUpController.swift */,
-				D65557AA267EAE5C008AAE74 /* HomeController.swift */,
 				D6EC64D6267F957400762EFD /* LogInController.swift */,
+				D65557AA267EAE5C008AAE74 /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D61855A4265174D600B21CD0 /* LaunchScreen.storyboard in Resources */,
-				D6F626BA267D4F6A0077A038 /* GoogleService-Info.plist in Resources */,
+				D6B535E8267FE7F8001701E2 /* GoogleService-Info.plist in Resources */,
 				D61855A1265174D600B21CD0 /* Assets.xcassets in Resources */,
 				D618559F265174D500B21CD0 /* Main.storyboard in Resources */,
 			);

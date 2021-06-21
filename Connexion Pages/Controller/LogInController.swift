@@ -23,7 +23,6 @@ class LogInController: UIViewController, UITextFieldDelegate {
         
         setUpButtons()
         setUpTextField()
-
     }
 
     // MARK: -> Actions (buttons)
@@ -44,6 +43,8 @@ class LogInController: UIViewController, UITextFieldDelegate {
                 self.performSegue(withIdentifier: "goToHome2", sender: self)
             }
         }
+        emptyTextFields()
+        print("Connexion de \(self.emailTextField.text ?? "Default") réussie✅")
     }
     
     
@@ -108,7 +109,7 @@ class LogInController: UIViewController, UITextFieldDelegate {
             if (passWordTextField.text?.utf16.count)! > 1 && (passWordTextField.text?.utf16.count)! < 8 {
                 errorMessageLabel.text = "Le mot de passe doit \n contenir au moins 8 caractères"
             } else {
-                print("Ok")
+                print("Mot de passe Ok")
                 errorMessageLabel.text = ""
             }
         }

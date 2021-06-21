@@ -19,16 +19,18 @@
 	<key>STORAGE_BUCKET</key>
 	<string>fir-app-b20c4.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:642214261560:ios:1be03b53c55a0487a787cd</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-app-b20c4-default-rtdb.europe-west1.firebasedatabase.app</string>
 </dict>
 </plist>

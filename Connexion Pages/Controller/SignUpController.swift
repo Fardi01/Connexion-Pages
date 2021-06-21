@@ -8,6 +8,7 @@
 // Objectif : Gerer les evenements de la touche "Return"
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpController: UIViewController, UITextFieldDelegate {
     
@@ -66,10 +67,19 @@ class SignUpController: UIViewController, UITextFieldDelegate {
                 if error != nil {
                     print(error.debugDescription)
                 } else {
+                    print("Inscription de \(self.userNameTextField.text ?? "Default") réussie✅")
+                    
+                    // Je rajoute le nom d'utilisateur de mon user pour le stocker dans la base de donnée
+                    let ref = Database.database().reference()
+                    let userID = Auth.auth().currentUser?.uid
+                    ref.child("users").child(userID!).setValue(["userName": self.userNameTextField.text!])
+                    print(ref)
+                    
                     // On passe à l'écran suivant !
                     self.performSegue(withIdentifier: "goToHome", sender: self)
-                    print("Inscription de \(self.userNameTextField.text ?? "Default") réussie✅")
                     self.emptyTextFields()
+                    
+                    
                 }
             }
         } else {
